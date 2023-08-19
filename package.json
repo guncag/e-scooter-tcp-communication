@@ -1,0 +1,14 @@
+{
+  "name": "e-scooter-tcp-communication",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ascii-hex": "^1.0.1",
+    "axios": "^1.4.0",
+    "firebase-admin": "^11.10.1"
+  }
+}
