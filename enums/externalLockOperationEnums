@@ -1,0 +1,15 @@
+const externalLockOperationEnums = Object.freeze({
+    UnlockBatteryLock: 1,
+    UnlockHelmetLock : 2 , 
+    UnlockCableLock : 3 ,
+    LockBatteryLock : 17 ,
+    LockhelmetLock : 18 ,
+    LockCableLock : 19 ,
+    GetBatteryLockStatus : 33 ,
+    GetHelmetLockStatus : 34 ,
+    GetCableLockStatus : 35 
+  });
+  
+  module.exports = externalLockOperationEnums;
+
+

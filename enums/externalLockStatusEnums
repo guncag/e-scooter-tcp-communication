@@ -1,0 +1,9 @@
+const externalLockStatusEnums = Object.freeze({
+    Success: 0,
+    Failure : 1 , 
+    CommunicationtimeOutWithE : 2 ,
+    LockState : 16 , 
+    UnlockState : 17 
+  });
+  
+  module.exports = externalLockStatusEnums;

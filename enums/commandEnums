@@ -1,0 +1,28 @@
+const CommandEnum = Object.freeze({
+    CHECK_IN: "Q0", // Check-in komutu, sunucuya her bağlantıdan sonra ilk önce kilit gönderilecektir (bağlantı kesildikten sonra yeniden bağlanma dahil)
+    HEARTBEAT: "H0", // Heartbeat komutu, bağlantıyı sürdürmek için her 4 dakikada bir kilit gönderilir
+    UNLOCKING_LOCK: "R0", // Unlocking/Lock , Kilit açma/Kilitleme işlemi isteği komutu
+    UNLOCK : "L0", // Unlock , Komutun kilidini açın, bu komutu göndermeden önce R0 komutunu gönderin
+    LOCK : "L1", // Scooter komutunu kilitleyin, bu komutu göndermeden önce R0 komutunu gönderin
+    DEVICE_SETTING_INSTRUCTION : "S5", // IOT cihazı ayar talimatları 
+    GET_DEVICE_INFO : "S6", // Scooter bilgilerini al
+    SETTING_INSTRUCTION_1 : "S7", // Scooter ayar talimatı 1
+    SETTING_INSTRUCTION_2 : "S4", // Scooter ayar talimatı 1
+    ALARM : "W0", // alarm komutu
+    BEEP_PLAYBACK : "V0", //  Bip çalma komutu
+    GET_POSITIONING_INSTRUCTION_ST : "D0", //  Konumlandırma talimatlarını tek seferde alın
+    POSITIONING_TRACKING_INSTRUCTION : "D1", //  Konum izleme talimatı
+    GET_FW_VERSION : "G0", //  Donanım yazılımı sürümünü edinin
+    UPLOAD_CONTROLLER_FAUL_CODE : "E0", // Denetleyici hata kodunu yükleyin , Upload controller fault code
+    DETECT_UPGRADE_BOOT_UPGRADE : "U0", //  Yükseltme/önyükleme yükseltmesini algıla , Detect upgrade/boot upgrade
+    GET_UPGRADE_DATA : "U1", //  Yükseltme verilerini al , Get upgrade data
+    NOTIFICATION_OF_UPGRADE_SUCCESSFULLY : "U2", //  Yükseltme bildirimi başarıyla , Notification of upgrade successfully
+    SETTING_GETTING_BLE_KEY : "K0", //   Ayarlama/BLE 8-byte iletişim ANAHTARI alma , Setting/Getting BLE 8-byte communication KEY
+
+
+
+    EVENT_NOTIFICATION : "S1", // Eventnotification
+    UNLOCK_EXTERNAL_DEVICES : "L5", // Unlock external devices 
+  });
+  
+  module.exports = CommandEnum;
