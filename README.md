@@ -17,7 +17,7 @@ This section explains how to set up and run the project.
 1. Clone the project:
 
 ```
-git clone https://github.com/guncag/
+git clone git@github.com:guncag/e-scooter-tcp-communication.git
 ```
 
 2. Install the dependencies:
